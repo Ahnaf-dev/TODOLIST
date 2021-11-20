@@ -51,52 +51,52 @@ const addingPage = function(id) {
 
 //     // page content
 
-//     const template = `
-//     <section id="delete-section" class="${styles.editPage}">
-//         <h2>Add Item</h2>
-//         <div class="display-container">
-//             <form action="#" class="${styles.form}"  data-netlify="true" name="inputedit" >
-//                 <div class="form-group">
-//                     <label for="ID">ID</label>
-//                     <input type="text" id="ID" name="ID" >
-//                 </div>
-//                 <div class="form-group">
-//                 <label for="category">Category</label>
-//                 <select name="category" id="category">
-//                     <option value="Health">Health</option>
-//                     <option value="Social">Social</option>
-//                     <option value="Work">Work</option>
-//                     <option value="Home">Home</option>
-//                     <option value="School">School</option>
-//                 </select>
-//                 </div> 
-//                 <div class="form-group">
-//                     <label for="title">Title</label>
-//                     <input type="text" id="title" name="title" >
-//                 </div>
-//                 <div class="form-group">
-//                     <label for="date">Date</label>
-//                     <input type="text" id="date" name="date">
-//                 </div>
-//                 <div class="form-group">
-//                     <label for="description">Description</label>
-//                     <input type="text" id="description" name="description">
-//                 </div>
+    const template = `
+    <section id="delete-section" class="${styles.editPage}">
+        <h2>Add Item</h2>
+        <div class="display-container">
+            <form action="#" class="${styles.form}"  data-netlify="true" name="inputedit" >
+                <div class="form-group">
+                    <label for="ID">ID</label>
+                    <input type="text" id="ID" name="ID" >
+                </div>
+                <div class="form-group">
+                <label for="category">Category</label>
+                <select name="category" id="category">
+                    <option value="Health">Health</option>
+                    <option value="Social">Social</option>
+                    <option value="Work">Work</option>
+                    <option value="Home">Home</option>
+                    <option value="School">School</option>
+                </select>
+                </div> 
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title" >
+                </div>
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="text" id="date" name="date">
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <input type="text" id="description" name="description">
+                </div>
                 
                 
-//                 <div class="flex-btn form-btn">
+                <div class="flex-btn form-btn">
                 
-//                 </div>
+                </div>
                 
-//            </form>
-//         </div>
-//     </section>
-//    `
+           </form>
+        </div>
+    </section>
+   `
 
-//    section = makeElement(template)
+   section = makeElement(template)
 //    section.querySelector('.flex-btn').append(cancelButton)
 //    section.querySelector('.flex-btn').append(addButton)
-//    page.append(section)
+   page.append(section)
 
 
 // //    add functionality
