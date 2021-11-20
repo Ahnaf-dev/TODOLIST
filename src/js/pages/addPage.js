@@ -28,34 +28,36 @@ const addingPage = function(id) {
     toDoHeader.append(brandTag)
     page.append(toDoHeader)
     // ---------------------------------------------------------------------
-//     const addButton = inputEdit()
-//     const cancelButton = cancelBtn()
+    const addButton = inputEdit()
+    const cancelButton = cancelBtn()
 
-//     // event listeners
+    // event listeners
 
-//     function cleanUp() {
-//         cancelButton.removeEventListener('click',onCancelEdit)
+    function cleanUp() {
+        cancelButton.removeEventListener('click',onCancelEdit)
 
-//     }
+    }
 
-//     function onCancelEdit(e) {
-//         cleanUp()
-//         Router('/todoapp')
+    function onCancelEdit(e) {
+        cleanUp()
+        Router('/todoapp')
 
-//     }
+    }
 
 
 
-//     cancelButton.addEventListener('click',onCancelEdit)
+    cancelButton.addEventListener('click',onCancelEdit)
 
 
 //     // page content
+const section = document.createElement('section')
+const h2 = document.createElement('h2')
+h2.innerText = "Add Item"
+section.append(h2)
 
     const template = `
-    <section id="delete-section" class="${styles.editPage}">
-        <h2>Add Item</h2>
-        <div class="display-container">
-            <form action="#" class="${styles.form}"  data-netlify="true" name="inputedit" >
+        <div class="display-container ${styles.editPage}">
+            <form action="#" class="${styles.form}" name="inputedit">
                 <div class="form-group">
                     <label for="ID">ID</label>
                     <input type="text" id="ID" name="ID" >
@@ -90,12 +92,12 @@ const addingPage = function(id) {
                 
            </form>
         </div>
-    </section>
    `
-
-   section = makeElement(template)
-//    section.querySelector('.flex-btn').append(cancelButton)
-//    section.querySelector('.flex-btn').append(addButton)
+   const content = makeElement(template)
+   console.log(content)
+   section.append(content)
+   section.querySelector('.flex-btn').append(cancelButton)
+   section.querySelector('.flex-btn').append(addButton)
    page.append(section)
 
 
