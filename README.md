@@ -12,4 +12,4 @@ Data has been fetched, stored, and inserted into a list component and displayed 
 
 ## Deployed Site
 
-https://xenodochial-brahmagupta-ec7b8b.netlify.app/
+https://boring-hawking-82c670.netlify.app/
