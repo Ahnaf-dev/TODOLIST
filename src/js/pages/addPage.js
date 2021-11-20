@@ -51,6 +51,7 @@ const addingPage = function(id) {
 
 //     // page content
 const section = document.createElement('section')
+section.classList.add("addsection")
 const h2 = document.createElement('h2')
 h2.innerText = "Add Item"
 section.append(h2)
@@ -94,7 +95,7 @@ section.append(h2)
         </div>
    `
    const content = makeElement(template)
-   console.log(content)
+
    section.append(content)
    section.querySelector('.flex-btn').append(cancelButton)
    section.querySelector('.flex-btn').append(addButton)
@@ -103,39 +104,39 @@ section.append(h2)
 
 // //    add functionality
 
-//    var form = section.querySelector("form")
+   var form = section.querySelector("form")
     
-//     form.onsubmit = function () {
+    form.onsubmit = function () {
         
-//         id = document.getElementById('ID').value
-//         category = document.getElementById('category').value
-//         title = document.getElementById('title').value
-//         date = document.getElementById('date').value
-//         description = document.getElementById('description').value
-//         // isComplete = document.getElementById('complete').value
+        id = document.getElementById('ID').value
+        category = document.getElementById('category').value
+        title = document.getElementById('title').value
+        date = document.getElementById('date').value
+        description = document.getElementById('description').value
+        // isComplete = document.getElementById('complete').value
 
-//         // console.log(isComplete)
-//        const obj = {
-//           "id": id,
-//           "category": category,
-//           "title": title,
-//           "date": date,
-//           "description": description,
-//           "isComplete":false
-//        }
+        // console.log(isComplete)
+       const obj = {
+          "id": id,
+          "category": category,
+          "title": title,
+          "date": date,
+          "description": description,
+          "isComplete":false
+       }
 
     
-//        const action = {
-//                 type:"add",
-//                 payload:{obj},
-//                 cb:() => cleanUp()
-//             }
+       const action = {
+                type:"add",
+                payload:{obj},
+                cb:() => cleanUp()
+            }
     
             
-//             reducers(action)
+            reducers(action)
             
-//             Router('/todoapp')
-//     }
+            Router('/todoapp')
+    }
 
 
 
