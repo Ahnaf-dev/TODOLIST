@@ -1,0 +1,43 @@
+[
+  {
+      
+      "category":"School",
+      "title":"School Category",
+      "date": "Wednesday November 12th",
+      "description":"To-Do list of school category",
+      "isComplete":true
+  },
+  {
+    
+    "category":"Home",
+    "title":"Home Category",
+    "date": "Wednesday November 12th",
+    "description":"To-Do list of home category",
+    "isComplete":false
+  },
+  {
+    
+    "category":"Social",
+    "title":"Social Category",
+    "date": "Wednesday November 12th",
+    "description":"To-Do list of social category",
+    "isComplete":true
+  },
+  {
+   
+    "category":"Health",
+    "title":"Health Category",
+    "date": "Wednesday November 12th",
+    "description":"To-Do list of health category",
+    "isComplete":false
+  }
+  ,
+  {
+    
+    "category":"Work",
+    "title":"Work Category",
+    "date": "Wednesday November 12th",
+    "description":"To-Do list of work category",
+    "isComplete":false
+  }
+]

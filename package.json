@@ -1,0 +1,36 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "",
+  "default": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run static && npx parcel src/index.html",
+    "static": "npx gulp",
+    "build": "npm run static && npx parcel build src/index.html",
+    "clean": "rm -rf .parcel-cache dist",
+    "clean:git": "rm -rf .parcel-cache dist node_modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ahnaf-dev/todolist.git"
+  },
+  "author": "Ahnaf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ahnaf-dev/todolist/issues"
+  },
+  "homepage": "https://github.com/Ahnaf-dev/todolist#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0-rc.0",
+    "gulp": "^4.0.2",
+    "http-server": "^13.0.2",
+    "parcel": "^2.0.0-rc.0",
+    "sass": "^1.42.1"
+  },
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "lodash": "^4.17.21",
+    "uuid": "^8.3.2"
+  }
+}

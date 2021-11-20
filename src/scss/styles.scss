@@ -1,0 +1,224 @@
+@use 'header';
+
+@use 'ui';
+
+@use 'layout';
+
+@use 'typography';
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: white;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+
+
+// ToDoheader
+
+.toDoHeader {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: rgb(10, 10, 80);
+}
+
+.toDoHeader h1 {
+  margin-bottom: 0;
+}
+.toDoHeader p {
+  margin-bottom: 0;
+}
+
+// TodoItem 
+
+.todo-list {
+  padding: 2rem;
+}
+
+.todo-list h2 + p {
+  opacity: 0.7;
+  margin-bottom: 0;
+}
+
+.toggle-complete {
+  color: red;
+}
+
+
+#flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.btn-flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.btn-flex a {
+  padding: 1rem;
+  color: goldenrod;
+}
+
+// Unique category backgrounds
+
+.School {
+  background-color: #DFFFD6;
+}
+
+.Home {
+  background-color: #F3FFE1;
+}
+
+.Social {
+  background-color: #FFD7D5;
+}
+
+.Health {
+  background-color: #FFD3E8;
+}
+
+.Work {
+  background-color: #E8D7FF;
+}
+
+// 404 section
+
+#error-404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#error-404 h2 {
+  font-size: 5rem;
+  color: red;
+  margin-bottom: 4.8rem;
+}
+
+#error-404 a {
+  color: goldenrod;
+  font-size: 2.4rem;
+}
+
+#error-404 a:hover {
+  color:rgb(10, 10, 80);
+}
+
+// add btn
+
+.add-container {
+  position: relative;
+  height: 10rem;
+  background-color: royalblue;
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.add-btn {
+ 
+  
+  color: goldenrod;
+  
+}
+
+// delete section
+
+#delete-section {
+  
+  height: 500px;
+}
+
+#delete-section h2 {
+  margin-bottom: 2rem;
+}
+
+// .flex-btn a {
+  
+//   display: flex;
+//   align-items: center;
+//   border: 2px solid goldenrod;
+//   padding: 2rem;
+//   color: goldenrod;
+// }
+// .flex-btn svg {
+//   margin-right: 1rem;
+// }
+
+#mb-3 {
+  margin-bottom: 3rem;
+}
+
+//form button
+
+input#complete {
+  
+  height: 5rem;
+  width: 5rem;
+
+}
+
+.form-btn {
+
+  a {
+    display: flex;
+    align-items: center;
+    color: goldenrod;
+    border: 2px solid goldenrod;
+    padding: 1rem 2rem;
+    
+    &:hover {
+        color: red;
+        background-color: black;
+    }
+  
+  
+    svg {
+        margin-right: 1rem;
+    }
+  }
+
+  input#submit {
+    text-align: start;
+    font-weight: 700;
+    color: goldenrod;
+    border: 2px solid goldenrod;
+    padding: 2rem 1rem;
+    background-color: white;
+
+    &:hover {
+      color: red;
+      background-color: black;
+   }
+  }
+
+}

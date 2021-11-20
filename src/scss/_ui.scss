@@ -1,0 +1,20 @@
+// button component
+
+.home-btn {
+  text-decoration: none;
+  background-color: goldenrod;
+  color: rgb(5, 5, 5);
+  font-size: 1.8rem;
+  // padding: 1rem 5rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  max-width: 20rem;
+  transition: 0.5s ease-in-out;
+}
+
+.home-btn:hover {
+  background-color: rgb(165, 42, 11);
+  color: white;
+
+}
+
