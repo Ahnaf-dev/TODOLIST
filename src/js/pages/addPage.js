@@ -28,112 +28,112 @@ const addingPage = function(id) {
     toDoHeader.append(brandTag)
     page.append(toDoHeader)
     // ---------------------------------------------------------------------
-    const addButton = inputEdit()
-    const cancelButton = cancelBtn()
+//     const addButton = inputEdit()
+//     const cancelButton = cancelBtn()
 
-    // event listeners
+//     // event listeners
 
-    function cleanUp() {
-        cancelButton.removeEventListener('click',onCancelEdit)
+//     function cleanUp() {
+//         cancelButton.removeEventListener('click',onCancelEdit)
 
-    }
+//     }
 
-    function onCancelEdit(e) {
-        cleanUp()
-        Router('/todoapp')
+//     function onCancelEdit(e) {
+//         cleanUp()
+//         Router('/todoapp')
 
-    }
-
-
-
-    cancelButton.addEventListener('click',onCancelEdit)
+//     }
 
 
-    // page content
 
-    const template = `
-    <section id="delete-section" class="${styles.editPage}">
-        <h2>Add Item</h2>
-        <div class="display-container">
-            <form action="#" class="${styles.form}"  data-netlify="true" name="inputedit" >
-                <div class="form-group">
-                    <label for="ID">ID</label>
-                    <input type="text" id="ID" name="ID" >
-                </div>
-                <div class="form-group">
-                <label for="category">Category</label>
-                <select name="category" id="category">
-                    <option value="Health">Health</option>
-                    <option value="Social">Social</option>
-                    <option value="Work">Work</option>
-                    <option value="Home">Home</option>
-                    <option value="School">School</option>
-                </select>
-                </div> 
-                <div class="form-group">
-                    <label for="title">Title</label>
-                    <input type="text" id="title" name="title" >
-                </div>
-                <div class="form-group">
-                    <label for="date">Date</label>
-                    <input type="text" id="date" name="date">
-                </div>
-                <div class="form-group">
-                    <label for="description">Description</label>
-                    <input type="text" id="description" name="description">
-                </div>
+//     cancelButton.addEventListener('click',onCancelEdit)
+
+
+//     // page content
+
+//     const template = `
+//     <section id="delete-section" class="${styles.editPage}">
+//         <h2>Add Item</h2>
+//         <div class="display-container">
+//             <form action="#" class="${styles.form}"  data-netlify="true" name="inputedit" >
+//                 <div class="form-group">
+//                     <label for="ID">ID</label>
+//                     <input type="text" id="ID" name="ID" >
+//                 </div>
+//                 <div class="form-group">
+//                 <label for="category">Category</label>
+//                 <select name="category" id="category">
+//                     <option value="Health">Health</option>
+//                     <option value="Social">Social</option>
+//                     <option value="Work">Work</option>
+//                     <option value="Home">Home</option>
+//                     <option value="School">School</option>
+//                 </select>
+//                 </div> 
+//                 <div class="form-group">
+//                     <label for="title">Title</label>
+//                     <input type="text" id="title" name="title" >
+//                 </div>
+//                 <div class="form-group">
+//                     <label for="date">Date</label>
+//                     <input type="text" id="date" name="date">
+//                 </div>
+//                 <div class="form-group">
+//                     <label for="description">Description</label>
+//                     <input type="text" id="description" name="description">
+//                 </div>
                 
                 
-                <div class="flex-btn form-btn">
+//                 <div class="flex-btn form-btn">
                 
-                </div>
+//                 </div>
                 
-           </form>
-        </div>
-    </section>
-   `
+//            </form>
+//         </div>
+//     </section>
+//    `
 
-   section = makeElement(template)
-   section.querySelector('.flex-btn').append(cancelButton)
-   section.querySelector('.flex-btn').append(addButton)
-   page.append(section)
+//    section = makeElement(template)
+//    section.querySelector('.flex-btn').append(cancelButton)
+//    section.querySelector('.flex-btn').append(addButton)
+//    page.append(section)
 
 
-//    add functionality
+// //    add functionality
 
-   var form = section.querySelector("form")
+//    var form = section.querySelector("form")
     
-    form.onsubmit = function () {
+//     form.onsubmit = function () {
         
-        id = document.getElementById('ID').value
-        category = document.getElementById('category').value
-        title = document.getElementById('title').value
-        date = document.getElementById('date').value
-        description = document.getElementById('description').value
-        // isComplete = document.getElementById('complete').value
+//         id = document.getElementById('ID').value
+//         category = document.getElementById('category').value
+//         title = document.getElementById('title').value
+//         date = document.getElementById('date').value
+//         description = document.getElementById('description').value
+//         // isComplete = document.getElementById('complete').value
 
-        // console.log(isComplete)
-       const obj = {
-          "id": id,
-          "category": category,
-          "title": title,
-          "date": date,
-          "description": description,
-          "isComplete":false
-       }
+//         // console.log(isComplete)
+//        const obj = {
+//           "id": id,
+//           "category": category,
+//           "title": title,
+//           "date": date,
+//           "description": description,
+//           "isComplete":false
+//        }
 
     
-       const action = {
-                type:"add",
-                payload:{obj},
-                cb:() => cleanUp()
-            }
+//        const action = {
+//                 type:"add",
+//                 payload:{obj},
+//                 cb:() => cleanUp()
+//             }
     
             
-            reducers(action)
+//             reducers(action)
             
-            Router('/todoapp')
-    }
+//             Router('/todoapp')
+//     }
 
 
 
