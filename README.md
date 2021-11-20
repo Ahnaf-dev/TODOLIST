@@ -2,7 +2,7 @@
 
 ## App Description
 A To Do List app built with pure Javascript using ES6 Modules. An app is made in the index which gets inserted with a page function. The pages are set up with a router.
-Data has been fetched, stored, and inserted into a list component and displayed dymanically in the todoapp page. 404 Page has also been added.
+Data has been fetched, stored, and inserted into a list component and displayed dymanically in the todoapp page. 404 Page has also been added. Functionality added to delete, add and edit todo items.
 
 ## How To Run App
 
